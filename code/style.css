@@ -1,0 +1,476 @@
+@font-face {
+    font-family: text;
+    src: url(../fonts/Barlow-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: header;
+    src: url(../fonts/Oswald/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: pp;
+    src: url(../fonts/Barlow-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../icon/fonts/icomoon.eot?4xwzp5');
+    src: url('../icon/fonts/icomoon.eot?4xwzp5#iefix') format('embedded-opentype'),
+        url('../icon/fonts/icomoon.ttf?4xwzp5') format('truetype'),
+        url('../icon/fonts/icomoon.woff?4xwzp5') format('woff'),
+        url('../icon/fonts/icomoon.svg?4xwzp5#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-light-bulb:before {
+    content: "\e907";
+}
+
+.icon-price-tag:before {
+    content: "\e905";
+}
+
+.icon-tag:before {
+    content: "\e902";
+}
+
+.icon-eye:before {
+    content: "\e903";
+}
+
+.icon-bulb:before {
+    content: "\e908";
+}
+
+.icon-calendar:before {
+    content: "\e904";
+}
+
+.icon-date:before {
+    content: "\e904";
+}
+
+.icon-schedule:before {
+    content: "\e904";
+}
+
+.icon-home:before {
+    content: "\e906";
+}
+
+.icon-search:before {
+    content: "\e986";
+}
+
+.icon-facebook2:before {
+    content: "\ea91";
+}
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: header;
+    font-weight: normal;
+}
+
+body {
+    font-family: text;
+    color: white;
+    margin-bottom: 1000px;
+}
+
+/* this title use for every title*/
+.title-s {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    position: relative;
+    padding-bottom: 50px;
+    text-align: center;
+    margin: 50px 0;
+    color: #4a4a4a;
+}
+
+.title-s h2 {
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.title-s p {
+    font-size: 25px;
+}
+
+.title-s::before {
+    content: "";
+    width: 80px;
+    height: 1px;
+    background-color: #45c0d6;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.title-s::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #45c0d6;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 6px solid white;
+}
+
+/* this is for white title*/
+.color-white {
+    color: white;
+}
+
+.color-white::after {
+    border-color: #41bdda;
+    background-color: white;
+}
+
+.color-white::before {
+    background-color: white;
+}
+
+/*HEADER*/
+
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 230px;
+    min-width: 100px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    display: flex;
+    padding: 0 13px;
+}
+
+.menu a {
+    text-decoration: none;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.menu a:hover {
+    color: lightgray;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: url(../photo/hero-pattern.png), linear-gradient(to bottom right, #5a72fc, #fb4d4d) no-repeat center top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+.contant-hero {
+    transform: translate(0, -30px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contant-hero h1::after {
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.contant-hero>h1 {
+    font-size: 5vw;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.contant-hero>span {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: 30px;
+}
+
+.hamburger {
+    width: 33px;
+    height: 23px;
+    align-self: center;
+    justify-content: space-between;
+    display: none;
+    flex-direction: column;
+    align-self: center;
+}
+
+.hamburger>span {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
+.help-you {
+    width: 100%;
+    color: #4a4a4a;
+    text-align: center;
+}
+
+
+.items {
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 32%;
+    padding: 70px 40px 50px 40px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.18);
+    background-color: white;
+    z-index: 3;
+}
+
+.item h3,
+.learn-more {
+    text-transform: uppercase;
+}
+
+.item>p {
+    text-align: center;
+    margin: 20px 0 60px 0;
+    line-height: 23px;
+    color: #b0b0b0;
+    font-size: 15px;
+    font-family: pp;
+}
+
+.learn-more {
+    padding: 10px 20px;
+    background-color: white;
+    text-decoration: none;
+    color: white;
+    background-color: #45c0d6;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+.items>:nth-child(2) {
+    transform: scale(1.1);
+    color: white;
+    background: linear-gradient(to bottom right, #7bb0e7, #4ecac2);
+    z-index: 4;
+}
+
+.items>:nth-child(2)>p {
+    color: #4a4a4a;
+
+}
+
+.items>:nth-child(2) a {
+    outline: 2px solid white;
+
+}
+
+.primary {
+    color: #45c0d6;
+}
+
+.services {
+    width: 100%;
+    min-height: 700px;
+    background-color: #00ccc4;
+    background: url(../photo/hero-pattern.png), linear-gradient(to top right, #00ccc4, #69b2e8), no-repeat center top;
+    background-size: cover;
+    transform: translate(0, -30px);
+    padding: 150px 0;
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-item {
+    width: 33.333%;
+    height: 200px;
+    display: flex;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.holder {
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    position: relative;
+
+}
+
+.holder:hover .card {
+    transform: rotateY(-180deg);
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.front {
+    transform: translatez(-40px);
+    backface-visibility: hidden;
+}
+
+.front>span {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.front>p {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.78);
+    line-height: 16px;
+    font-weight: bolder;
+}
+
+.back {
+    transform: translatez(40px) rotatey(180deg);
+    backface-visibility: hidden;
+    color: rgba(255, 255, 255, 0.78);
+
+}
+
+
+@media(max-width:767px) {
+    header {
+        background-color: #eb4f61;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .hero {
+        clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
+    }
+
+    .help-you {
+        border-top: 10px solid black;
+    }
+
+    .item {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .list-item {
+        width: 100%;
+    }
+
+    .services {
+        clip-path: polygon(0 0, 100% 0, 100% 99%, 0 100%);
+        border-bottom: 2px solid #f6f2f7;
+    }
+}
