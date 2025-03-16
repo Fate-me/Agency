@@ -115,6 +115,11 @@ body {
     margin-bottom: 1000px;
 }
 
+body::selection {
+    background-color: #41bdda;
+    color: white;
+}
+
 /* this title use for every title*/
 .title-s {
     width: 100%;
@@ -162,6 +167,18 @@ body {
     border: 6px solid white;
 }
 
+/* THIS BUTTON FOR EVERY BUTTONS*/
+.learn-more {
+    padding: 10px 20px;
+    background-color: white;
+    text-decoration: none;
+    color: white;
+    background-color: #45c0d6;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+
 /* this is for white title*/
 .color-white {
     color: white;
@@ -176,6 +193,14 @@ body {
     background-color: white;
 }
 
+/* CONTAINER*/
+.container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
 /*HEADER*/
 
 header {
@@ -184,13 +209,6 @@ header {
     top: 0;
     left: 0;
     z-index: 6;
-}
-
-.container {
-    width: 100%;
-    max-width: 1150px;
-    margin: 0 auto;
-    padding: 0 16px;
 }
 
 nav {
@@ -230,6 +248,7 @@ nav {
     color: lightgray;
 }
 
+/*HERO*/
 .hero {
     width: 100%;
     height: 100vh;
@@ -271,6 +290,7 @@ nav {
     margin-top: 30px;
 }
 
+/*HAMBURGER MENU*/
 .hamburger {
     width: 33px;
     height: 23px;
@@ -287,6 +307,7 @@ nav {
     background-color: white;
 }
 
+/*HELP YOU*/
 .help-you {
     width: 100%;
     color: #4a4a4a;
@@ -323,16 +344,6 @@ nav {
     font-family: pp;
 }
 
-.learn-more {
-    padding: 10px 20px;
-    background-color: white;
-    text-decoration: none;
-    color: white;
-    background-color: #45c0d6;
-    border-radius: 2px;
-    font-size: 12px;
-}
-
 .items>:nth-child(2) {
     transform: scale(1.1);
     color: white;
@@ -354,6 +365,7 @@ nav {
     color: #45c0d6;
 }
 
+/*SERVICES*/
 .services {
     width: 100%;
     min-height: 700px;
@@ -378,6 +390,8 @@ nav {
     text-align: center;
     margin-bottom: 50px;
 }
+
+/*CARD*/
 
 .holder {
     width: 100%;
@@ -437,7 +451,226 @@ nav {
 
 }
 
+/*OUR-TEAM*/
+.our-team {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 160px;
+    padding: 100px 0 150px 0;
+}
 
+.our-team>:nth-child(1),
+.our-team> :nth-child(2) {
+    width: 49%;
+    margin-bottom: 60px;
+}
+
+.member {
+    width: 24%;
+    color: #4a4a4a;
+}
+
+figure {
+    width: 100%;
+    position: relative;
+}
+
+figure>img {
+    width: 100%;
+}
+
+figcaption>h4 {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 7px 0 15px 0;
+}
+
+figcaption p {
+    color: #b0b0b0;
+}
+
+.shadow {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 5px solid rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    color: black;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.social {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.social>span {
+    width: 120px;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    bottom: 160%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    transition-timing-function: linear;
+    opacity: 0;
+    color: #f6f2f7;
+    border-radius: 3px;
+    font-size: 1vw;
+    text-align: center;
+}
+
+.shadow>a {
+    color: #4a4a4a;
+    text-decoration: none;
+}
+
+.social>span::after {
+    content: "";
+    border: 5px solid transparent;
+    border-top-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+figure:hover .shadow {
+    opacity: 1;
+
+}
+
+i:hover+span {
+    bottom: 135%;
+    opacity: 1;
+}
+
+i:hover {
+    color: #41bdda;
+}
+
+/*our-philosophy*/
+.our-philosophy {
+    width: 100%;
+    min-height: 400px;
+    background: linear-gradient(to bottom right, #3edbac, #16a6e8);
+
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+.phi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 120px 50px;
+}
+
+
+.contant-philosophy {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contant-philosophy>h2 {
+    font-size: 55px;
+}
+
+.contant-philosophy>p {
+    font-size: 19px;
+    line-height: 35px;
+}
+
+.contant-philosophy>a {
+    align-self: flex-start;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.photo-philosophy {
+    width: 35%;
+}
+
+.photo-philosophy>img {
+    width: 100%;
+}
+
+/*FEEDBACK*/
+.feedback {
+    width: 100%;
+    color: #4a4a4a;
+}
+
+.contant-feedback {
+    width: 100%;
+    max-width: 40%;
+    margin: 0 auto;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contant-feedback>p {
+    font-size: 18px;
+    line-height: 1.7em;
+    color: #bebebe;
+    text-align: center;
+}
+
+.user {
+    width: 70%;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.user img {
+    width: 30%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+figcaption span {
+    display: block;
+}
+
+figcaption :nth-child(1) {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+figcaption :nth-child(2) {
+    color: #bebebe;
+}
+
+
+
+/*RESPONSIVE*/
 @media(max-width:767px) {
     header {
         background-color: #eb4f61;
@@ -452,11 +685,7 @@ nav {
     }
 
     .hero {
-        clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
-    }
-
-    .help-you {
-        border-top: 10px solid black;
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
     }
 
     .item {
@@ -470,7 +699,52 @@ nav {
     }
 
     .services {
-        clip-path: polygon(0 0, 100% 0, 100% 99%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 98%, 0 100%);
         border-bottom: 2px solid #f6f2f7;
+    }
+
+    .member {
+        width: 100% !important;
+        margin-bottom: 50px !important;
+    }
+
+    .shadow {
+        position: relative;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        border: 1px solid #dedede;
+        border-top: none;
+        background-color: #f7f7f7;
+    }
+
+
+    .social>span {
+        font-size: 2vw;
+    }
+
+    .contant-philosophy {
+        width: 100% !important;
+    }
+
+    .our-philosophy {
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+    }
+
+    .photo-philosophy {
+        width: 100% !important;
+    }
+
+    .user {
+        display: block;
+        width: 90%;
+    }
+
+    .user img {
+        width: 80%;
+    }
+
+    figcaption {
+        text-align: center;
     }
 }
