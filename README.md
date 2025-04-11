@@ -13,8 +13,9 @@ The layout is designed with Flexbox to keep the design clean and adaptable acros
 *Clean, modern layout ideal for portfolios or digital agency pages
 
 
-📱 #Responsive Design
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*Desktop: Multi-section layout with horizontal navigation
+📱 #Responsive Design 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*Desktop: Multi-section layout with horizontal navigation
 
 *Tablet: Layout adjusts to smaller screen gracefully
 
