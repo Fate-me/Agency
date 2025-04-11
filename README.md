@@ -27,4 +27,4 @@ Mobile: Sections stack vertically for easy scrolling
 View the live project here:
 Agency on GitHub
 
-Made with care by (https://github.com/Fate-me)[Fatemeh Mohseni]
+Made by [Fatemeh Mohseni](https://github.com/Fate-me)
