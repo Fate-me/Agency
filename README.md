@@ -1,4 +1,4 @@
- 🌍 Agency
+ 🌐 Agency
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 This is a simple responsive website built using HTML and CSS. 
 The layout is designed with Flexbox to keep the design clean and adaptable across different screen sizes.
