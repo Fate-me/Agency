@@ -1052,6 +1052,11 @@ footer {
         height: 350px;
     }
 
+    .gallery figure figcaption {
+        top: -10px;
+        left: 0;
+    }
+
     .event {
         clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
     }
